@@ -1,0 +1,55 @@
+.storybook-search {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 3em;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+
+    background-color: #555ab9;
+    color: white;
+}
+
+/* ===== Input ===== */
+.storybook-search__input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+
+    padding: 11px 14px;
+    width: 150px;
+}
+
+.storybook-search__input::placeholder {
+    color: currentColor;
+    opacity: 0.7;
+}
+
+/* ===== Button ===== */
+.storybook-search__button {
+    border: 0;
+
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+
+    padding: 11px 20px;
+    min-width: 88px;
+}
+
+/* ===== Disabled / Loading ===== */
+.storybook-search__input:disabled,
+.storybook-search__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.storybook-search--loading {
+    cursor: wait;
+}
